@@ -17,7 +17,6 @@ def index(request):
 		'type':'video'
 		}
 		r=requests.get(search_url,params=search_params)
-		print("This is value of r *************************")
 		results=r.json()['items']
 		video_ids=[]
 		for result in results:
